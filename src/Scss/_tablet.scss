@@ -1,0 +1,120 @@
+@media (min-width: 768px) {
+    header {
+        height: 600px;
+        background: url(../Assets/desktop/image-header.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    // =============================== NAV ===============================
+    .nav-wrapper {
+
+        .mobile-button {
+            display: none;
+        }
+
+        .nav-menu {
+            position: initial;
+            background-color: transparent;
+            flex-direction: row;
+            width: auto;
+            padding: 0;
+
+            .nav-link {
+                font-family: $ff-barlow;
+                font-size: 18px;
+                color: $white;
+                margin-bottom: 0;
+                margin-right: 2rem;
+    
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            .contact-btn {
+                background-color: $white;
+                padding: 12px 20px;
+            }
+            
+        }
+    }
+
+
+
+
+
+    // =============================== CARD WITH TEXT OUTSIDE ===============================
+    .card-with-text-outside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+
+        .image-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .about-image-container {
+            order: 1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .text-container {
+            text-align: left;
+            padding: 3rem 2rem;
+    
+            h2 {
+                font-family: $ff-fraunces;
+                font-weight: $fw-fraunces-extra-bold;
+                font-size: 30px;
+                line-height: 1.2;
+            }
+    
+            p {
+                font-family: $ff-barlow;
+                font-size: 16px;
+                line-height: 1.5;
+                color: $dark-grayish-blue;
+                margin: 1.5rem 0 2rem;
+            }
+        }
+    }
+
+
+
+
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+
+
+                // Graphic design card.
+        .graphic-design-card {
+            background: url(../Assets/desktop/image-graphic-design.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+
+
+        // Photography design card.
+        .photography-design-card {
+            background: url(../Assets/desktop/image-photography.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+    }
+}

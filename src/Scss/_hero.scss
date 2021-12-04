@@ -1,0 +1,16 @@
+.hero-wrapper {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 2rem;
+        font-family: $ff-fraunces;
+        font-size: 35px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $white;
+    }
+}

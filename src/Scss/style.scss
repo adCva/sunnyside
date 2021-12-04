@@ -1,0 +1,124 @@
+@import "config";
+@import "utilities";
+@import "nav";
+@import "hero";
+@import "footer";
+@import "testimonials";
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: $ff-barlow;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    list-style: 1.5;
+}
+
+header {
+    height: 520px;
+    background: url(../Assets/mobile/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+
+
+
+// About card.
+.about-wrapper {
+    .about-text {
+        button {
+            @extend %learn-more-btn;
+
+            &:after {
+                @include learn-more($yellow);
+            }
+        }
+    }
+}
+
+// Discover card.
+.discover-wrapper {
+    .discover-text {
+        button {
+            @extend %learn-more-btn;
+
+            &:after {
+                @include learn-more($soft-red);
+            }
+        }
+    }
+}
+
+
+
+// Graphic design card.
+.graphic-design-card {
+    height: 600px;
+    background: url(../Assets/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    .graphic-design-text {
+        h2 {
+            color: $dark-desaturated-cyan;
+        }
+
+        p {
+            color: $dark-desaturated-cyan;
+        }
+    }
+}
+
+
+// Photography design card.
+.photography-design-card {
+    height: 600px;
+    background: url(../Assets/mobile/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    .graphic-design-text {
+        h2 {
+            color: $dark-blue;
+        }
+
+        p {
+            color: $dark-blue;
+        }
+    }
+}
+
+
+
+
+
+.images-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 180px;
+    }
+}
+
+
+
+@import "tablet";

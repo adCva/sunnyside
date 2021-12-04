@@ -1,0 +1,46 @@
+.testimonials-wrapper {
+    background-color: $card-white-bg;
+    text-align: center;
+    padding: 3rem 0;
+
+    h3 {
+        font-family: $ff-barlow;
+        text-transform: uppercase;
+        color: $grayish-blue;
+    }
+
+    .testimonials-people-group {
+        margin-top: 2rem;
+        padding: 0 1rem;
+
+        .testimonials-people-card {
+            margin-bottom: 4rem;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 70px;
+                border-radius: 50%;
+            }
+
+            p {
+                color: $very-dark-grayish-blue;
+            }
+
+
+            .testimonials-people-name {
+                margin-top: 1.5rem;
+
+                h5 {
+                    color: $very-dark-desaturated-blue;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
