@@ -1,46 +1,153 @@
 .nav-wrapper {
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto 2rem;
+    // background-color: red;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
-    position: relative;
+    padding: 2rem 0;
+    width: 87%;
+    max-width: 1400px;
+    margin: 0 auto;
 
+
+    // ========================== Nav Menu.
     .nav-menu {
-        position: fixed;
-        top: 100px;
-        width: 90%;
+        background-color: $card-white-bg;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2.5rem 0;
-        background-color: $white;
+        position: fixed;
+        top: 105px;
+        width: 87%;
+        padding: 2rem 0;
+        border-radius: 5px;
+        border-top-right-radius: 0;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        z-index: 99;
 
-
-        .nav-link {
-            font-family: $ff-barlow;
-            font-size: 18px;
-            color: $dark-grayish-blue;
-            margin-bottom: 2rem;
-
-            &:last-of-type {
-                margin-bottom: 2.5rem;
-            }
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -23px;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 0px solid transparent;
+            border-bottom: 25px solid $white;
         }
 
 
+
+        // ========================== Links.
+        .nav-link {
+            color: $dark-grayish-blue;
+            font-family: $ff-barlow;
+            font-size: 18.5px;
+            letter-spacing: 0.5px;
+            margin-bottom: 2.3rem;
+        }
+
+
+
+        // ========================== Contact Btn.
         .contact-btn {
             font-family: $ff-fraunces;
             font-size: 16px;
             text-transform: uppercase;
+            padding: 20px 32px;
             background-color: $yellow;
             border: none;
             border-radius: 50px;
             outline: none;
-            padding: 20px 32px;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 768px) {
+    .nav-wrapper {
+        // ========================== Hamburger btn.
+        .mobile-button {
+            display: none;
+        }
+
+
+        // ========================== Nav Menu.
+        .nav-menu {
+            background-color: transparent;
+            flex-direction: row;
+            position: initial;
+            width: auto;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
+
+
+            &::before {
+                content: none;
+            }
+
+
+            // ========================== Links.
+            .nav-link {
+                color: $card-white-bg;
+                font-size: 16.5px;
+                margin: 0 2rem 0 0;
+                cursor: pointer;
+                transition: all 0.25s ease-in-out;
+
+                &:hover {
+                    color: lighten($grayish-blue, 17%);
+                }
+
+                &:focus {
+                    color: lighten($grayish-blue, 17%);
+                }
+            }
+
+
+
+            // ========================== Contact Btn.
+            .contact-btn {
+                background-color: $card-white-bg;
+                padding: 12px 22px;
+                font-size: 15px;
+
+                cursor: pointer;
+                transition: all 0.25s ease-in-out;
+
+                &:hover {
+                    background-color: $nav-btn-hover;
+                    color: $card-white-bg;
+                }
+
+                &:focus {
+                    background-color: $nav-btn-hover;
+                    color: $card-white-bg;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+    .nav-wrapper {
+        // ========================== Nav Menu.
+        .nav-menu {
+            // ========================== Links.
+            .nav-link {
+                color: $card-white-bg;
+                margin: 0 3rem 0 0;
+            }
         }
     }
 }

@@ -1,14 +1,12 @@
 import React from 'react';
 
 
-
-
 function Projects() {
     return (
-        <div className="project-wrapper">
+        <div className="services-wrapper" id="services">
             <div className="card-text-inside graphic-design-card">
                 <div className="card-text graphic-design-text">
-                    <h2>Graphic design</h2>
+                    <h2>Graphic Design</h2>
                     <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
                 </div>
             </div>

@@ -25,7 +25,14 @@ function Nav() {
 
     // Close mobile menu on link click.
     const closeMenu = () => {
-        setMobileMenu(false);
+        if (window.innerWidth < 768) {
+            setMobileMenu(false);
+        }
+    };
+
+    // Contact btn message.
+    const onClickMessage = () => {
+        alert("This button does nothing.")
     };
 
     // Display menu on screens > 768px & close menu on outside click.
@@ -69,8 +76,8 @@ function Nav() {
                 <animated.div style={style} className="nav-menu" ref={menuRef}>
                     <Link to='about' smooth={true} duration={500} spy={true} exact='true' className="nav-link" onClick={closeMenu}>About</Link>
                     <Link to='services' smooth={true} duration={500} spy={true} exact='true' className="nav-link" onClick={closeMenu}>Services</Link>
-                    <Link to='projects' smooth={true} duration={500} spy={true} exact='true' offset={-80} className="nav-link" onClick={closeMenu}>Projects</Link>
-                    <button className="contact-btn">Contact</button>
+                    <Link to='projects' smooth={true} duration={500} spy={true} exact='true' className="nav-link" onClick={closeMenu}>Projects</Link>
+                    <button className="contact-btn" onClick={onClickMessage}>Contact</button>
                 </animated.div>
             ) : null)}
         </nav>

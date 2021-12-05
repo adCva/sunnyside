@@ -1,0 +1,163 @@
+.services-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+
+
+    .card-text-inside {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+        padding: 0 1rem 4rem;
+    
+        .card-text {
+            h2 {
+                font-family: $ff-fraunces;
+                font-weight: $fw-fraunces-extra-bold;
+                font-size: 27px;
+                margin-bottom: 1.8rem;
+            }
+    
+            p {
+                font-family: $ff-barlow;
+                font-size: 15px;
+                line-height: 1.7;
+            }
+        }
+    }
+
+
+    // Graphic design card.
+    .graphic-design-card {
+        height: 600px;
+        background: url(../Assets/mobile/image-graphic-design.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+
+        .graphic-design-text {
+            h2 {
+                color: $dark-desaturated-cyan;
+                font-family: $ff-fraunces;
+            }
+
+            p {
+                color: $dark-desaturated-cyan;
+            }
+        }
+    }
+
+
+    // Photography design card.
+    .photography-design-card {
+        height: 600px;
+        background: url(../Assets/mobile/image-photography.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+
+        .photography-design-text {
+            h2 {
+                color: $dark-blue;
+            }
+
+            p {
+                color: $dark-blue;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .services-wrapper {
+        grid-template-columns: 1fr 1fr;
+
+
+        // Graphic design card.
+        .graphic-design-card {
+            background: url(../Assets/desktop/image-graphic-design.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+
+
+        // Photography design card.
+        .photography-design-card {
+            background: url(../Assets/desktop/image-photography.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .services-wrapper {
+        grid-template-columns: 1fr 1fr;
+
+        .card-text-inside {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+            padding: 0 1rem 4rem;
+        
+            .card-text {
+                h2 {
+                    font-size: 35px;
+                    margin-bottom: 2rem;
+                }
+        
+                p {
+                    width: 60%;
+                    font-size: 17px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+
+
+        // Graphic design card.
+        .graphic-design-card {
+            height: 800px;
+        }
+
+
+        // Photography design card.
+        .photography-design-card {
+            height: 800px;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 1400px) {
+    .services-wrapper {
+
+        .card-text-inside {
+        
+            .card-text {        
+                p {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}

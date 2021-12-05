@@ -1,58 +1,85 @@
 .footer-wrapper {
     background-color: $footer-bg;
     text-align: center;
-    padding: 3rem 0;
+    padding: 4rem 0 4.5rem;
 
-    h3 {
-        font-family: $ff-fraunces;
-        font-weight: $fw-fraunces-extra-bold;
-        font-size: 30px;
-        color: darken($dark-moderate-cyan, 20%);
+
+    .footer-logo {
+        width: 160px;
+        filter: invert(59%) sepia(14%) saturate(1020%) hue-rotate(118deg) brightness(96%) contrast(94%);
     }
 
+
     .footer-links {
-        width: 65%;
-        max-width: 350px;
-        margin: 2rem auto 5rem;
+        width: 75%;
+        max-width: 300px;
+        margin: 2.5rem auto 6rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .footer-link {
-            text-decoration: none;
             font-family: $ff-barlow;
-            font-size: 16.5px;
+            font-size: 18px;
             color: $dark-moderate-cyan;
+            background: transparent;
+            border: none;
+            outline: none;
             cursor: pointer;
             transition: all 0.25s ease-in-out;
 
             &:hover {
                 color: $card-white-bg;
+            }
+
+            &:focus {
+                color: $card-white-bg;
+                outline: none;
             }
         }
     }
 
 
     .footer-social-icons {
-        width: 45%;
+        width: 55%;
         max-width: 200px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        button {
-            background: transparent;
-            color: darken($dark-moderate-cyan, 15%);
-            border: none;
-            outline: none;
-            font-size: 20px;
+        a {
+            color: darken($dark-moderate-cyan, 5%);
+            font-size: 22px;
             cursor: pointer;
             transition: all 0.25s ease-in-out;
+            text-decoration: none;
 
             &:hover {
                 color: $card-white-bg;
             }
+
+            &:focus {
+                color: $card-white-bg;
+            }
         }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .footer-wrapper {
+        padding: 4rem 0;
+    
+    
+        .footer-links {
+            margin: 3rem auto 5.5rem;
+            
+            .footer-link {
+                font-size: 19px;
+            }
+        }
+
     }
 }

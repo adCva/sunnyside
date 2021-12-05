@@ -1,7 +1,8 @@
 @import "config";
-@import "utilities";
 @import "nav";
 @import "hero";
+@import "cardOutside";
+@import "projects";
 @import "footer";
 @import "testimonials";
 
@@ -23,7 +24,7 @@ body {
 }
 
 header {
-    height: 520px;
+    height: 550px;
     background: url(../Assets/mobile/image-header.jpg);
     background-size: cover;
     background-position: center;
@@ -32,81 +33,14 @@ header {
 }
 
 
+@keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-30px);} 
+    60% {-webkit-transform: translateY(-15px);} 
+} 
 
 
-// About card.
-.about-wrapper {
-    .about-text {
-        button {
-            @extend %learn-more-btn;
-
-            &:after {
-                @include learn-more($yellow);
-            }
-        }
-    }
-}
-
-// Discover card.
-.discover-wrapper {
-    .discover-text {
-        button {
-            @extend %learn-more-btn;
-
-            &:after {
-                @include learn-more($soft-red);
-            }
-        }
-    }
-}
-
-
-
-// Graphic design card.
-.graphic-design-card {
-    height: 600px;
-    background: url(../Assets/mobile/image-graphic-design.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
-
-    .graphic-design-text {
-        h2 {
-            color: $dark-desaturated-cyan;
-        }
-
-        p {
-            color: $dark-desaturated-cyan;
-        }
-    }
-}
-
-
-// Photography design card.
-.photography-design-card {
-    height: 600px;
-    background: url(../Assets/mobile/image-photography.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
-
-    .graphic-design-text {
-        h2 {
-            color: $dark-blue;
-        }
-
-        p {
-            color: $dark-blue;
-        }
-    }
-}
-
-
-
-
-
+// ========================= PreFooter Images. ========================= 
 .images-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,4 +55,51 @@ header {
 
 
 
-@import "tablet";
+
+
+
+
+@media (min-width: 768px) {
+    header {
+        height: 70vh;
+        background: url(../Assets/desktop/image-header.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .images-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+
+        img {
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    header {
+        height: 90vh;
+    }
+
+
+    .images-wrapper {
+        img {
+            height: 330px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        height: 100vh;
+    }
+
+    .images-wrapper {
+        img {
+            height: 430px;
+        }
+    }
+}

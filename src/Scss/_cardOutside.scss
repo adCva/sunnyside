@@ -1,0 +1,207 @@
+.card-with-text-outside {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $card-white-bg;
+
+    img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .text-container {
+        color: $very-dark-desaturated-blue;
+        text-align: center;
+        padding: 3rem 1.5rem;
+
+        h2 {
+            font-family: $ff-fraunces;
+            font-weight: $fw-fraunces-extra-bold;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        p {
+            font-family: $ff-barlow;
+            font-size: 17.7px;
+            line-height: 1.5;
+            color: $dark-grayish-blue;
+            margin: 1.5rem 0 2.3rem;
+        }
+    }
+}
+
+
+
+
+// Learn more btn.
+%learn-more-btn {
+    background: transparent;
+    color: $very-dark-desaturated-blue;
+    border: none;
+    outline: none;
+    font-family: $ff-fraunces;
+    font-weight: $fw-fraunces-extra-bold;
+    font-size: 14.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+
+    &:after {
+        content: "";
+        display: block;
+        height: 7px;
+        width: 110%;
+        border-radius: 5px;
+        margin: -0.35rem 0 0 -5%;
+        z-index: -1;
+        transition: all 0.25s ease-in-out;
+    }
+}
+
+@mixin learn-more($color) {
+    background-color: lighten($color, 20%);
+}
+
+@mixin learn-more-hover($color) {
+    background-color: $color;
+}
+
+
+
+// About card.
+.about-wrapper {
+    .about-text {
+        button {
+            @extend %learn-more-btn;
+
+            &:after {
+                @include learn-more($yellow);
+            }
+
+            &:hover {
+                &:after {
+                    @include learn-more-hover($yellow);
+                }
+            }
+
+            &:focus {
+                &:after {
+                    @include learn-more-hover($yellow);
+                }
+            }
+        }
+    }
+}
+
+
+// Projects card.
+.projects-wrapper {
+    .projects-text {
+        button {
+            @extend %learn-more-btn;
+
+            &:after {
+                @include learn-more($soft-red);
+            }
+
+            &:hover {
+                &:after {
+                    @include learn-more-hover($soft-red);
+                }
+            }
+
+            &:focus {
+                &:after {
+                    @include learn-more-hover($soft-red);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+     .card-with-text-outside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+
+        .image-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .about-image-container {
+            order: 1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .text-container {
+            text-align: left;
+            padding: 3rem;
+    
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media (min-width: 1200px) {
+     .card-with-text-outside {
+        .text-container {
+            text-align: left;
+            padding: 3rem 5rem;
+    
+            h2 {
+                font-size: 35px;
+            }
+    
+            p {
+                width: 95%;
+                font-size: 17.7px;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width: 1400px) {
+     .card-with-text-outside {
+        .text-container {
+            text-align: left;
+            padding: 3rem 5rem;
+    
+            h2 {
+                font-size: 47px;
+            }
+    
+            p {
+                width: 70%;
+                font-size: 19.5px;
+            }
+        }
+    }
+}
