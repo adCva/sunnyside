@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import "../Scss/style.css";
 import { Link } from 'react-scroll';
 import { useTransition, animated } from 'react-spring';
 

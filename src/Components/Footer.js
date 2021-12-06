@@ -2,21 +2,20 @@ import React from 'react';
 import { FaFacebookSquare, FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
 
 
-
 function Footer() {
+    // Social icon onClick message.
     const onClickMessage = () => {
         alert("This button does nothing.")
     };
 
 
-    
     return (
         <div className="footer-wrapper">
             <img src="./images/logo.svg" alt="Logo" className="footer-logo"/>
             <div className="footer-links">
                 <button className="footer-link" onClick={onClickMessage}>About</button>
                 <button className="footer-link" onClick={onClickMessage}>Services</button>
-                <button  className="footer-link" onClick={onClickMessage}>Projects</button>
+                <button className="footer-link" onClick={onClickMessage}>Projects</button>
             </div>
             <div className="footer-social-icons">
                 <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FaFacebookSquare/></a>

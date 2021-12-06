@@ -1,13 +1,12 @@
 .nav-wrapper {
-    // background-color: red;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
     width: 87%;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 2rem 0;
 
 
     // ========================== Nav Menu.
@@ -36,7 +35,7 @@
             height: 0;
             border-left: 25px solid transparent;
             border-right: 0px solid transparent;
-            border-bottom: 25px solid $white;
+            border-bottom: 25px solid $card-white-bg;
         }
 
 
@@ -54,11 +53,11 @@
 
         // ========================== Contact Btn.
         .contact-btn {
+            background-color: $yellow;
             font-family: $ff-fraunces;
             font-size: 16px;
             text-transform: uppercase;
             padding: 20px 32px;
-            background-color: $yellow;
             border: none;
             border-radius: 50px;
             outline: none;
@@ -87,7 +86,6 @@
             border-radius: 0;
             box-shadow: none;
 
-
             &::before {
                 content: none;
             }
@@ -115,9 +113,8 @@
             // ========================== Contact Btn.
             .contact-btn {
                 background-color: $card-white-bg;
-                padding: 12px 22px;
                 font-size: 15px;
-
+                padding: 12px 22px;
                 cursor: pointer;
                 transition: all 0.25s ease-in-out;
 
@@ -138,14 +135,12 @@
 
 
 
-
 @media (min-width: 1200px) {
     .nav-wrapper {
         // ========================== Nav Menu.
         .nav-menu {
             // ========================== Links.
             .nav-link {
-                color: $card-white-bg;
                 margin: 0 3rem 0 0;
             }
         }

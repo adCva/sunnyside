@@ -51,9 +51,9 @@
         a {
             color: darken($dark-moderate-cyan, 5%);
             font-size: 22px;
+            text-decoration: none;
             cursor: pointer;
             transition: all 0.25s ease-in-out;
-            text-decoration: none;
 
             &:hover {
                 color: $card-white-bg;
@@ -68,10 +68,10 @@
 
 
 
+
 @media (min-width: 768px) {
     .footer-wrapper {
         padding: 4rem 0;
-    
     
         .footer-links {
             margin: 3rem auto 5.5rem;

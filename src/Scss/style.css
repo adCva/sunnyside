@@ -9,10 +9,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 0;
   width: 87%;
   max-width: 1400px;
   margin: 0 auto;
+  padding: 2rem 0;
 }
 
 .nav-wrapper .nav-menu {
@@ -51,7 +51,7 @@
   height: 0;
   border-left: 25px solid transparent;
   border-right: 0px solid transparent;
-  border-bottom: 25px solid #ffffff;
+  border-bottom: 25px solid #fffbf8;
 }
 
 .nav-wrapper .nav-menu .nav-link {
@@ -63,11 +63,11 @@
 }
 
 .nav-wrapper .nav-menu .contact-btn {
+  background-color: #fad400;
   font-family: "Fraunces", serif;
   font-size: 16px;
   text-transform: uppercase;
   padding: 20px 32px;
-  background-color: #fad400;
   border: none;
   border-radius: 50px;
   outline: none;
@@ -109,8 +109,8 @@
   }
   .nav-wrapper .nav-menu .contact-btn {
     background-color: #fffbf8;
-    padding: 12px 22px;
     font-size: 15px;
+    padding: 12px 22px;
     cursor: pointer;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -127,7 +127,6 @@
 
 @media (min-width: 1200px) {
   .nav-wrapper .nav-menu .nav-link {
-    color: #fffbf8;
     margin: 0 3rem 0 0;
   }
 }
@@ -140,12 +139,12 @@
 }
 
 .hero-wrapper .icon-down-arrow {
+  z-index: -1;
   cursor: pointer;
   -webkit-animation: bounce 3s ease-in-out;
           animation: bounce 3s ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  z-index: -1;
 }
 
 .hero-wrapper h1 {
@@ -172,7 +171,6 @@
 @media (min-width: 1000px) {
   .hero-wrapper h1 {
     font-size: 45px;
-    margin-bottom: 6rem;
   }
 }
 
@@ -281,10 +279,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .card-with-text-outside .image-container {
-    width: 100%;
-    height: 100%;
   }
   .card-with-text-outside .about-image-container {
     -webkit-box-ordinal-group: 2;
@@ -541,10 +535,10 @@
 .footer-wrapper .footer-social-icons a {
   color: #3d7b6f;
   font-size: 22px;
+  text-decoration: none;
   cursor: pointer;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-  text-decoration: none;
 }
 
 .footer-wrapper .footer-social-icons a:hover {
@@ -711,8 +705,6 @@
 }
 
 html {
-  font-family: "Barlow", sans-serif;
-  font-size: 18px;
   scroll-behavior: smooth;
 }
 

@@ -5,10 +5,10 @@
     text-align: center;
 
     .icon-down-arrow {
+        z-index: -1;
         cursor: pointer;
         animation: bounce 3s ease-in-out;
         animation-iteration-count: infinite;
-        z-index: -1;
     }
 
 
@@ -26,6 +26,7 @@
 
 
 
+
 @media (min-width: 768px) {    
     .hero-wrapper {
         margin: 4rem auto 0;
@@ -38,14 +39,17 @@
 }
 
 
+
+
 @media (min-width: 1000px) {    
     .hero-wrapper {
         h1 {
             font-size: 45px;
-            margin-bottom: 6rem;
         }
     }
 }
+
+
 
 
 @media (min-width: 1400px) {    

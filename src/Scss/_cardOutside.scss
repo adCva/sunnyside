@@ -69,6 +69,7 @@
 
 
 
+
 // About card.
 .about-wrapper {
     .about-text {
@@ -93,6 +94,8 @@
         }
     }
 }
+
+
 
 
 // Projects card.
@@ -123,23 +126,12 @@
 
 
 
-
-
-
-
-
-
 @media (min-width: 768px) {
      .card-with-text-outside {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
-
-        .image-container {
-            width: 100%;
-            height: 100%;
-        }
 
         .about-image-container {
             order: 1;
@@ -164,8 +156,6 @@
 
 
 
-
-
 @media (min-width: 1200px) {
      .card-with-text-outside {
         .text-container {
@@ -183,7 +173,6 @@
         }
     }
 }
-
 
 
 

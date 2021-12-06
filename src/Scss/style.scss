@@ -8,20 +8,28 @@
 
 
 
+
 * {
     box-sizing: border-box;
 }
 
 
+
+
 html {
-    font-family: $ff-barlow;
-    font-size: 18px;
     scroll-behavior: smooth;
 }
+
+
+
 
 body {
     list-style: 1.5;
 }
+
+
+
+
 
 header {
     height: 550px;
@@ -33,11 +41,15 @@ header {
 }
 
 
+
+
 @keyframes bounce { 
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
     40% {-webkit-transform: translateY(-30px);} 
     60% {-webkit-transform: translateY(-15px);} 
 } 
+
+
 
 
 // ========================= PreFooter Images. ========================= 
@@ -52,9 +64,6 @@ header {
         height: 180px;
     }
 }
-
-
-
 
 
 
@@ -84,13 +93,15 @@ header {
         height: 90vh;
     }
 
-
     .images-wrapper {
         img {
             height: 330px;
         }
     }
 }
+
+
+
 
 @media (min-width: 1440px) {
     header {

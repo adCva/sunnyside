@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 function Images() {
+    // State for deciding image for mobile/desktop.
     const [isMobileView, setIsMobileView ] = useState(false);
 
+    // Load proper image for screen size.
     useEffect(() => {
         let smallerScreens = () => {
             if (window.innerWidth < 768) {
@@ -21,6 +23,7 @@ function Images() {
     });
 
 
+
     return (
         <div className="images-wrapper">
             <img src={isMobileView ? "./images/mobile/image-gallery-milkbottles.jpg" : "./images/desktop/image-gallery-milkbottles.jpg"} alt="Milkbottles" />            
@@ -31,4 +34,4 @@ function Images() {
     )
 }
 
-export default Images
+export default Images;

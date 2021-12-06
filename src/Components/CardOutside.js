@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 
 
 function CardOutside(props) {
+    // State for deciding image for mobile/desktop.
     const [isMobileView, setIsMobileView ] = useState(false);
 
+    // Learn more btn onClick message.
     const onClickMessage = () => {
         alert("This button does nothing.")
     };
 
+    // Load proper image for screen size.
     useEffect(() => {
         let smallerScreens = () => {
             if (window.innerWidth < 768) {
@@ -27,8 +30,6 @@ function CardOutside(props) {
 
 
 
-
-    
     return (
         <div className={`${props.cardName}-wrapper card-with-text-outside`} id={props.cardName}>
             <div className={`image-container ${props.cardName}-image-container`}>
