@@ -30,6 +30,7 @@
 @media (min-width: 768px) {    
     .hero-wrapper {
         margin: 4rem auto 0;
+        animation: enterHeroOpacity 1.3s ease-in-out;
 
         h1 {
             font-size: 42px;

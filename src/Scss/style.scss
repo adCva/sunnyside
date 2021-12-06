@@ -25,6 +25,7 @@ html {
 
 body {
     list-style: 1.5;
+    overflow-x: hidden;
 }
 
 
@@ -47,7 +48,32 @@ header {
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
     40% {-webkit-transform: translateY(-30px);} 
     60% {-webkit-transform: translateY(-15px);} 
-} 
+}
+
+
+
+
+@keyframes enterLeft {
+    from {-webkit-transform: translateX(-200%)}
+    to {-webkit-transform: translateX(0%)}
+}
+
+
+
+
+@keyframes enterRight {
+    from {-webkit-transform: translateX(200%)}
+    to {-webkit-transform: translateX(0%)}
+}
+
+
+
+
+
+@keyframes enterHeroOpacity {
+    from {-webkit-transform: translateY(200%)}
+    to {-webkit-transform: translateX(0%)}
+}
 
 
 

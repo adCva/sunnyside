@@ -70,6 +70,11 @@
 
 @media (min-width: 768px) {
     .nav-wrapper {
+
+        .logo {
+            animation: enterLeft 0.8s ease-in-out;
+        }
+        
         // ========================== Hamburger btn.
         .mobile-button {
             display: none;
@@ -85,6 +90,7 @@
             padding: 0;
             border-radius: 0;
             box-shadow: none;
+            animation: enterRight 1s ease-in-out;
 
             &::before {
                 content: none;
