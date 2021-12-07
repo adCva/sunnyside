@@ -1,6 +1,6 @@
 # Sunnyside agency landing page.
 
-Sunnyside agency landing page with ReactJs and Sass.
+Sunnyside agency landing page with ReactJs and Scss.
 
 ## Packages used.
 
