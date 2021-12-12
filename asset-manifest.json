@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sunnyside/static/css/main.0b6aed39.chunk.css",
+    "main.css": "/sunnyside/static/css/main.4c692500.chunk.css",
     "main.js": "/sunnyside/static/js/main.8fb39764.chunk.js",
     "main.js.map": "/sunnyside/static/js/main.8fb39764.chunk.js.map",
     "runtime-main.js": "/sunnyside/static/js/runtime-main.937cc397.js",
@@ -8,14 +8,14 @@
     "static/js/2.deb68db6.chunk.js": "/sunnyside/static/js/2.deb68db6.chunk.js",
     "static/js/2.deb68db6.chunk.js.map": "/sunnyside/static/js/2.deb68db6.chunk.js.map",
     "index.html": "/sunnyside/index.html",
-    "static/css/main.0b6aed39.chunk.css.map": "/sunnyside/static/css/main.0b6aed39.chunk.css.map",
+    "static/css/main.4c692500.chunk.css.map": "/sunnyside/static/css/main.4c692500.chunk.css.map",
     "static/js/2.deb68db6.chunk.js.LICENSE.txt": "/sunnyside/static/js/2.deb68db6.chunk.js.LICENSE.txt",
     "static/media/style.css": "/sunnyside/static/media/image-photography.26df83b3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.937cc397.js",
     "static/js/2.deb68db6.chunk.js",
-    "static/css/main.0b6aed39.chunk.css",
+    "static/css/main.4c692500.chunk.css",
     "static/js/main.8fb39764.chunk.js"
   ]
 }
